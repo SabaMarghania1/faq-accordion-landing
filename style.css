@@ -1,0 +1,10 @@
+/* font-family: 'Kumbh Sans', sans-serif; */
+* {
+  scrollbar-width: 100px;
+  scrollbar-color: #397524 #dfe9eb;
+}
+
+body {
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  min-height: 100vh;
+}
