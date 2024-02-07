@@ -17,7 +17,7 @@ body {
   padding-top: 132px;
   background-color: #fff;
   position: relative;
-  z-index: -1;
+
   margin: 148px 24px 0;
   border-radius: 21px;
 }
@@ -75,12 +75,17 @@ h1 {
 
 .question {
   position: relative;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.question:hover {
+  color: #f47b56;
 }
 
 .answer {
   color: #787887;
   font-size: 12px;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
 }
 
 .accordion .question::after {
@@ -95,6 +100,9 @@ h1 {
   background-size: contain;
 }
 
+.bold {
+  font-weight: bold;
+}
 .hidden {
   display: none;
 }
