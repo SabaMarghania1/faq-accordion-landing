@@ -121,6 +121,10 @@ h1 {
   display: none;
 }
 
+.box {
+  display: none;
+}
+
 @media screen and (min-width: 1440px) {
   .main {
     margin: 150px auto 0;
@@ -137,6 +141,7 @@ h1 {
     padding-right: 95px;
   }
   .box {
+    display: block;
     position: absolute;
     left: -80px;
   }
