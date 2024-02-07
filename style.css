@@ -1,10 +1,113 @@
-/* font-family: 'Kumbh Sans', sans-serif; */
 * {
   scrollbar-width: 100px;
   scrollbar-color: #397524 #dfe9eb;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
   min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 13px;
+}
+
+.main {
+  padding-top: 132px;
+  background-color: #fff;
+  position: relative;
+  z-index: -1;
+  margin: 148px 24px 0;
+  border-radius: 21px;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/bg-pattern-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 245px;
+  height: 145px;
+  top: 0%;
+}
+
+.main-img {
+  position: absolute;
+  top: -8.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 237px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+
+.accordion {
+  padding: 18px 0;
+  border-bottom: 1px solid #e8e8ea;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 100%;
+}
+
+.accordions {
+  width: 100%;
+  padding-bottom: 48px;
+}
+
+.question {
+  position: relative;
+}
+
+.answer {
+  color: #787887;
+  font-size: 12px;
+  line-height: 18px; /* 150% */
+}
+
+.accordion .question::after {
+  content: "";
+  background-image: url(./images/icon-arrow-down.svg);
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 16px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hidden {
+  display: none;
+}
+
+.accordion.active .question::after {
+  content: "";
+  background-image: url(./images/icon-arrow-down.svg);
+  transform: rotateX(180deg);
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 16px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
