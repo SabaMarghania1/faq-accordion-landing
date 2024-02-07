@@ -16,6 +16,7 @@ function openAccordion(e) {
 
   accordions.forEach(item => {
     item.classList.remove("bold");
+    item.parentNode.classList.remove("active");
   });
 
   currentAnswer.classList.toggle("hidden");

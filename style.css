@@ -100,13 +100,6 @@ h1 {
   background-size: contain;
 }
 
-.bold {
-  font-weight: bold;
-}
-.hidden {
-  display: none;
-}
-
 .accordion.active .question::after {
   content: "";
   background-image: url(./images/icon-arrow-down.svg);
@@ -118,4 +111,51 @@ h1 {
   height: 8px;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    margin: 150px auto 0;
+    max-width: 980px;
+    width: 100%;
+    background-image: url(./images/illustration-woman-online-desktop.svg),
+      url(./images/bg-pattern-desktop.svg);
+    background-size: 482px, 800px;
+    background-repeat: no-repeat;
+    background-position: left -90px top 114px, left -395px bottom -60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 95px;
+  }
+  .box {
+    position: absolute;
+    left: -80px;
+  }
+
+  .container {
+    margin: 0;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .accordions {
+    padding-bottom: 85px;
+  }
+
+  .main::before {
+    display: none;
+  }
+
+  .main-img {
+    display: none;
+  }
 }
